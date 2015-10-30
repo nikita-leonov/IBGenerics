@@ -12,10 +12,6 @@ import UIKit
 class GenericViewController<T>: UIViewController {
     @IBOutlet weak var label: UILabel!
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = "GenericViewController with type \(T.self)"

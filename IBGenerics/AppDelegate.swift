@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     override class func initialize() {
-        _ = SpecializedViewController() //This call makes SpecializedViewController visible for ObjC runtime. Without it IB will crash.
+        _ = SpecializedViewController.superclass() //This call makes SpecializedViewController visible for ObjC runtime. Without it IB will crash.
     }
 }
 
